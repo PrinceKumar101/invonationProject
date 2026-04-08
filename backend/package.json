@@ -1,0 +1,51 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./node_modules ./dist && npm i",
+    "build": "tsc -p tsconfig.json",
+    "dev": "concurrently \"npx nodemon ./dist/index.js \" \"npx tsc --w\" ",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/concurrently": "^6.4.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongodb": "^4.0.6",
+    "@types/mongoose": "^5.11.96",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^25.0.10",
+    "@types/nodemailer": "^7.0.11",
+    "@types/nodemon": "^1.19.6",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "nodemon": "^3.1.11",
+    "prettier": "3.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.1",
+    "morgan": "^1.10.1",
+    "nodemailer": "^8.0.1",
+    "zod": "^4.3.6"
+  }
+}
